@@ -1,1 +1,1 @@
-print("adea".islower())
+scissors
