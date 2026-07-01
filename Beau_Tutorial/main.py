@@ -85,5 +85,91 @@
 # print("adi doIng things".title())#Changes the first letter of each word to capital and remaing to small
 # print("adea".islower())#used to check whether it is all lower letters
 
+# isalpha() to check if a string contains only characters and is not empty
+# isalnum to check if a string contains characters or digits and is not empty
+# isdecimal() to check if a string contains digits and is not empty
+# lower() to get lowercase version of  a string
+# islower() to check whether if a string is all lowercase
+# upper() to get uppercase version of a string
+# isupper to check if a string is uppercase
+# title() to capitalize the first letter of the string
+# startswith() to checks if string starts with a specific substring
+# endswith() to check if the string ends with a specific substring 
+# replace() to replace  a part of the string
+# strip() to trim the whitespace from a string
+# split() to split a string on a specific cahracter separator
+# join() to append new letters to a string
+# find() to find the position of a substring
+
 # a=str(123)
 # print(a+"j")
+
+# name1="Be\nau "
+# print(name1.lower())
+# print(len(name1))#calculates number of characters in a string including spaces
+# print(len(name1.replace(" ","")))#Only letters
+# print("au" in name1)
+# name2="Be\"au" #How to escape a character
+# print(name2)
+# name3='Be"au'
+# print(name3)
+# name4='Be"\'au'
+# print(name4)
+# print(name1)
+# name5='Be\\au'
+# print(name5)
+
+# String Characters and Slicing #
+# name="Beau"
+# print(name[0]) #most programming languages start counting with zero.
+# print(name[1], name[2])
+# print(name[-1])
+# print(name[1:2])
+
+# Booleans #
+# done = True
+# print("YES") if done else print("NO") #Ternary Operator
+# print(isinstance(done,bool))
+#Numbers are always true except 0.
+#String are only false when empty
+
+# any and all #
+# book_1_read = True
+# book_2_read = False
+# read_any_book = any([book_1_read, book_2_read]) #any global fuction
+# print(read_any_book)
+# read_all_books = all([book_1_read, book_2_read]) #all global fuction
+# print(read_all_books)
+
+#Complex Number#
+# a = 2+3j#j=iota
+# print(type(a))
+# num = complex(2,3)
+# print(num)
+# print(type(num))
+# print(num.real, num.imag)
+
+# print(abs(-5.5))#abs make it positive
+# print(abs(5.5))#positive remains positive
+
+# print(round(5.49, 1))#rounda off to nearest integer
+#After comma one means than we should round it off to one digit after decimal
+
+# Enum #
+# from enum import Enum
+
+# class State(Enum):#Enum is the only way to assign constant value to a variable so that nobody could change them
+#     INACTIVE = 0
+#     ACTIVE = 1
+
+# print(State.ACTIVE)
+# print(State.ACTIVE.value)
+# print(State(1))
+# print(State['ACTIVE'])
+# print(list(State))
+# print(len(State))
+
+# print("Enter your age")
+# age = input()
+# age=input("Enter Your Age")
+# print("Your age is",age)

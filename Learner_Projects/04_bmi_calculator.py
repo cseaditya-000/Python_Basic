@@ -1,7 +1,7 @@
 mass=float(input("Please enter your accurate weight in kg: "))
 height=float(input("pleae enter your accurate height in cm: "))/100
 BMI=mass/(height**2)
-print("Your BMI is:",int(BMI))
+print("Your BMI is:",BMI)
 if BMI<=18:
     print("underweight")
 elif 18<BMI<25:
