@@ -145,17 +145,20 @@
 # a = 2+3j#j=iota
 # print(type(a))
 # num = complex(2,3)
+# num2 = 2 + 5j
+# print(num2.real)
 # print(num)
 # print(type(num))
 # print(num.real, num.imag)
 
-# print(abs(-5.5))#abs make it positive
+# print(abs(-5.5))#abs gives the absolute value of the function -->5.5
 # print(abs(5.5))#positive remains positive
 
-# print(round(5.49, 1))#rounda off to nearest integer
+# print(round(5.49))#rounda off to nearest integer
+# print(round(5.49, 1))
 #After comma one means than we should round it off to one digit after decimal
 
-# Enum #
+#    Enum    #
 # from enum import Enum
 
 # class State(Enum):#Enum is the only way to assign constant value to a variable so that nobody could change them
@@ -165,11 +168,22 @@
 # print(State.ACTIVE)
 # print(State.ACTIVE.value)
 # print(State(1))
-# print(State['ACTIVE'])
+# print(State['ACTIVE'].value)
 # print(list(State))
 # print(len(State))
 
-# print("Enter your age")
+# print("Enter your age: ", end="")  #Imp end at the last to remain in the same line
 # age = input()
-# age=input("Enter Your Age")
+# # age=input("Enter Your Age: ")
 # print("Your age is",age)
+dogs = ["Roger" , 1, "Syd" , True, "Quincy", 7]
+dogs[2] = "Beau"
+# print(dogs[2])
+# print(dogs[1:3])
+# print(dogs[:2])
+# print(dogs[1:])
+dogs.append("Judah")
+dogs.extend(["Hi"])# important syntax
+print(len(dogs))
+dogs += ["Sam", "Harry"]
+print(dogs)
